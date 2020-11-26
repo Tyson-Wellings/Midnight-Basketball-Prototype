@@ -3,10 +3,54 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Midnight Basketball</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d032ddafa4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/xje8bns.css">
   </head>
   <body>
-    <script src="script.js"></script>
+    <header>
+      <img src="images/header_logo.jpg" alt="Midnight Basketball's Logo" id="header_logo">
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" id="hamburger" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a> 
+      <div id="nav">
+        <a href="javascript:void(0);" id="nav-close" onclick="closeNav()">
+         <i class="fas fa-times"></i>
+        </a> 
+      <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#Mission">Our Mission</a>
+          <a href="#What">What we do</a>
+          <a href="#How">Ways you can help</a>
+          <a href="volunteers.html">Volunteer</a>
+        </div>  
+      </div>
+    </header>
+    
+    <section id="Mission">
+      <img src="images/Main.png" width="100%"> 
+      <div id="mission-content">
+        <h2>OUR </br> MISSION</h2>
+        <p>To enhance the life skills of teenagers and promote inclusiveness and opportunity through the game of basketball.<p>
+        <a href="volunteers.html" class="volunteer-button">
+          Volunteer
+        </a>
+      
+      </div>
+    </section>
+    
+    <section id="What">
+      <div class="cards" id="what1">
+        <img src="images/Image1.png" width="100%">
+        <p> Midnight Basketball Australia supports approved communities to run free late night social basketball Tournament, held on Friday and Saturday nights for local 12-18 year olds.</p> 
+      </div>
+      <div class="cards" id="what2"></div>
+      <div class="cards" id="what3"></div>
+    </section>
+
+
   </body>
 </html>
