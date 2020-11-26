@@ -24,6 +24,11 @@ header{
   padding: 0;
   height: 60px;
   position: relative;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 2;
+  
 }
 
 #header_logo{
@@ -53,7 +58,7 @@ header{
   height: 100%;
   overflow: hidden;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   display: none;
   top: 0%;
 }
@@ -83,8 +88,8 @@ header{
   font-weight: 700;
   font-style: normal;
 }
-#mission{
-  overflow: hidden;
+#Mission{
+  overflow: hidden; //allows the Mission div to contain the floating volunteer button. 
 }
 
 #mission-content{
@@ -108,8 +113,26 @@ header{
   line-height: 18px;
 }
 
+#What{
+  padding: 12px 24px; 
+
+}
+
+#What h2{
+  padding: 12px 0px;
+}
+#horizontal-scrolling-container{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  
+}
+
 .cards{
   width:305px;
+  display: inline-block;
+  flex: 0 0 auto;
+  padding-right: 24px; 
 }
 .cards img{
   width: 305px;
@@ -124,6 +147,52 @@ header{
   padding: 0 4px;
 }
 
-#What{
+blockquote{
   margin-top: 12px;
+  font-size: 18px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+}
+
+figcaption {
+  margin-top: 12px;
+  font-size: 24px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  float: right;
+  margin-bottom: 24px;
+}
+
+#end{
+  padding: 12px 24px; 
+}
+
+#call-to-action{
+  padding: 24px 0;
+  overflow: hidden;
+}
+
+#call-to-action p{
+  font-weight: 700;
+  font-size: 24px;
+}
+
+footer{
+  text-align: center;
+  display: block;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 700;
+}
+
+footer a{
+  
+  color: white;
+  padding: 6px 0;
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
 }
