@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0; 
 }
-//General formatting
+
 h2{
   font-family: acumin-pro, sans-serif;
   font-weight: 700;
@@ -26,7 +26,7 @@ header{
   position: sticky;
   top: 0%;
   width: 100%;
-  z-index: 8; //prevents the sticky header being overlapped by the content of the page
+  z-index: 8; 
   
 }
 
@@ -36,7 +36,6 @@ header{
 
 }
 
-// Style the hamburger menu //
 #hamburger { 
   font-size: 30px;
   display: inline-block;
@@ -44,10 +43,10 @@ header{
   position: absolute;
   right: 24px;
   top: 50%;
-  -ms-transform: translateY(-50%); //different browser support for the positioning of the hamburger
+  -ms-transform: translateY(-50%); 
   transform: translateY(-50%); 
   color: white;
-  text-decoration: none; //gets rid of the default a tag formatting
+  text-decoration: none;
 }
 
 
@@ -57,7 +56,7 @@ header{
   height: 100%;
   overflow: hidden; 
   position: fixed;
-  z-index: 9; //has navigations overlap all content.
+  z-index: 9; 
   display: none;
   top: 0%;
 }
@@ -88,7 +87,7 @@ header{
   font-style: normal;
 }
 #Mission{
-  overflow: hidden; //allows the Mission div to contain the floating volunteer button. 
+  overflow: hidden;  
 }
 
 #mission-content{
@@ -96,7 +95,7 @@ header{
   position: relative;
 }
 
-.volunteer-button{ //use of class allows all the buttons to remain consistent
+.volunteer-button{ 
   margin-top: 8px;
   color: white;
   background:#df6416;
@@ -122,7 +121,7 @@ header{
 }
 #horizontal-scrolling-container{
   display: flex; 
-  flex-wrap: nowrap; //prevents flex items looping to the bottom. facilitating horizontal scrolling.
+  flex-wrap: nowrap; 
   overflow-x: auto;
   
 }
@@ -130,7 +129,7 @@ header{
 .cards{
   width:305px;
   display: inline-block;
-  flex: 0 0 auto; //automatically dictates how the flex cards grow
+  flex: 0 0 auto; 
   padding-right: 24px; 
 }
 .cards img{
@@ -437,10 +436,4 @@ form {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-}
-
-@media screen and (min-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
 }
