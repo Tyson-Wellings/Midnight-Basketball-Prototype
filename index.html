@@ -6,22 +6,23 @@
     <title>Midnight Basketball</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/d032ddafa4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.typekit.net/xje8bns.css">
+    <script src="https://kit.fontawesome.com/d032ddafa4.js" crossorigin="anonymous"></script>  
+    <!-- vector icons for hamburger and x button on mobile nav-->
+    <link rel="icon" type="image/png" href="images/favicon.png"> <!-- favicon -->
   </head>
   <body>
     <header>
       <a id="logo-button" href="index.html">
         <img src="images/header_logo.jpg" alt="Midnight Basketball's Logo" id="header_logo">
-      </a>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      </a>  <!-- a tag redirects user to the homepage if the logo is pressed. -->
+    
         <a href="javascript:void(0);" id="hamburger" onclick="openNav()">
           <i class="fa fa-bars"></i>
-        </a> 
+        </a>  <!-- opens anv when hamburger is clicked -->
       <nav id="nav">
         <a href="javascript:void(0);" id="nav-close" onclick="closeNav()">
          <i class="fas fa-times"></i>
-        </a> 
+        </a> <!-- closes nav -->
       <!-- Navigation links (hidden by default) -->
         <div id="myLinks">
           <a href="#Mission" onclick="closeNav()">Our Mission</a>
@@ -36,7 +37,7 @@
       <div id="mission-content">
         <h2>OUR <br> MISSION</h2>
         <p>To enhance the life skills of teenagers and promote inclusiveness and opportunity through the game of basketball.<p>
-        <a href="volunteers.html" class="volunteer-button">
+        <a href="volunteers.html" class="volunteer-button"> <!-- class used so all buttons can have consistent styling. -->
           Volunteer
         </a>
       </div>
@@ -46,7 +47,7 @@
       <h2>
         What we do
       </h2>
-      <div id="horizontal-scrolling-container">
+      <div id="horizontal-scrolling-container"> <!-- contains the scrolling within the what section. Keeps the title seperated. -->
         <div class="cards" id="what1">
           <img src="images/Image1.png" width="100%">
           <p> Midnight Basketball Australia supports approved communities to run free late night social basketball Tournament, held on Friday and Saturday nights for local 12-18 year olds.</p> 
@@ -86,7 +87,7 @@
     </section>
     <footer>
       <a href="https://www.facebook.com/MidnightBasketballAustralia"> 
-        <i class="fab fa-facebook"></i>
+        <i class="fab fa-facebook"></i> <!-- Links to social media.  -->
       </a>
       <a href="https://twitter.com/Midnight_Bball">
         <i class="fab fa-twitter"></i>

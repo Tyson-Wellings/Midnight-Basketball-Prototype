@@ -6,14 +6,14 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/d032ddafa4.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.typekit.net/xje8bns.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <header>
       <a id="logo-button" href="index.html">
         <img src="images/header_logo.jpg" alt="Midnight Basketball's Logo" id="header_logo">
       </a>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      
         <a href="javascript:void(0);" id="hamburger" onclick="openNav()">
           <i class="fa fa-bars"></i>
         </a> 
@@ -29,12 +29,12 @@
         </div>  
       </nav>
     </header>
-    <div id="progress-bar-container">
+    <div id="progress-bar-container"> <!-- progress bar is contained within a container to allow for easier positioning -->
       <div id="progress-bar">
-        <div id="progress-bar-shading">
+        <div id="progress-bar-shading"> 
         </div>
       </div>
-      <span class="dot" id="dot1"></span>
+      <span class="dot" id="dot1"></span> <!-- spans are inline by default -->
       <span class="dot" id="dot2"></span>
       <span class="dot" id="dot3"></span>
     </div>  
@@ -51,8 +51,8 @@
         </div>
         <p class="questionnaire-prompt">Pick any areas where you feel you would be interested in making a contribution. 
         </p>
-        <form id="first-page-form">
-          <label for="court" class="checkbox-container"> 
+        <form id="first-page-form"> <!--Each page in the form actually overlap eachother but only one is on display at a time. -->
+          <label for="court" class="checkbox-container">  <!-- label double as a container for the inputs. -->
             <input id="court" type="checkbox" name="court" value="court"> 
             On the court
           </label><br>
@@ -99,7 +99,7 @@
         <p class="questionnaire-prompt">Pick all duties that you would feel qualified to fulfill.
         </p>
         <form id="second-page-form">
-          <div id="court-jobs">  
+          <div id="court-jobs">  <!--Each category in page 1 corresponds to a set of volunteer roles. By looking at what categories were checked the second page displays the corresponding roles.  -->
             <label for="coach" class ="checkbox-container"> 
               <input type="checkbox" name="coach" value="coach"> 
                 Coach/Coach Assistant
@@ -268,7 +268,7 @@
           <input type="date" class="third-page-input" id="DOB" name="DOB"
             min="1900-01-01" max="2020-11-27"><br>
 
-          <div id="location-container">
+          <div id="location-container"> <!-- creating a drop down differs to a regular input. -->
             <label class="third-page-input-labels" for="location">Closest Midnight Basketball</label><br>
             <select class="third-page-input" name="location">
               <option class="location-options" value="ballarat">Ballarat</option>

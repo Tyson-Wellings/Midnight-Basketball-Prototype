@@ -1,6 +1,6 @@
 html {
 font-size: 62.5%;
-}
+}  /* allows 1rem to be equilvalent to 10px on most browsers and devices. */ 
 
 *{
   background: black;
@@ -27,11 +27,12 @@ p{
 header{
   padding: 6px 0 6px 12px;
   height: fit-content;
-  position: sticky;
+  position: sticky;  /* Keeps the header stuck to the top of the window at all times so the navigation is always accessable to users. */ 
   top: 0%;
   width: 100%;
   z-index: 8; 
   box-sizing: border-box;
+   /* Prevents there being excess header that causes the page to need horizontal scrolling */ 
   
 }
 
@@ -57,7 +58,7 @@ header{
   position: absolute;
   right: 24px;
   top: 50%;
-  -ms-transform: translateY(-50%); 
+  -ms-transform: translateY(-50%);  /* Allows the hamburger to be centered within the header vertically. multiple browser support. */ 
   transform: translateY(-50%); 
   color: white;
   text-decoration: none;
@@ -155,7 +156,7 @@ nav {
 #horizontal-scrolling-container{
   display: flex; 
   flex-wrap: nowrap; 
-  overflow-x: auto;
+  overflow-x: auto;  /* Flexbox is used to achieve horizontal scrolling in the What section. */ 
 }
 
 .cards{
@@ -291,7 +292,7 @@ footer a:hover{
 #progress-bar-shading{
   background:#df6416;
   width: 50%;
-  z-index: 4;
+  z-index: 4;  /* z-index specified as the progress bar is created with 3 circles and 2 lines. The orange line sits above the white one to give the illusion of shading.*/ 
   height: 12px; 
   display: inline-block;
 }
@@ -337,9 +338,9 @@ form {
   -webkit-appearance: none;
   -moz-appearance: none;
   -o-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  height: 20px;
+  appearance: none;  /* Gets rid of the default styling of the checkboxes */ 
+  cursor: pointer;  /*What follows is our own custom formatting */ 
+  height: 20px; 
   width: 20px;
   background-color: white;
   border-radius: 50%;
@@ -358,7 +359,7 @@ form {
 .next-button{
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
+  appearance: none;  /* like with the checkbox this eliminate default styling. */ 
   margin-top: 8px;
   color: white;
   background:#df6416;
@@ -409,10 +410,10 @@ form {
 #page2, #page3{
   padding: 12px 24px; 
   display: none;
-}
+}  /* Other pages of the survey are hidden. Until the buttons initiate them. */ 
 
 #court-jobs, #bus-jobs, #canteen-jobs, #peace-jobs, #mentoring-jobs, #prep-jobs, #committee-jobs{
-  display: none;
+  display: none; 
 }
 
 #third-page-form{
@@ -486,32 +487,32 @@ form {
   font-size: 1.8rem;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {  /* Typical Tablet dimensions.*/ 
 
   html {
-    font-size: 75%;
+    font-size: 75%;  /* increases the size of 1 rem. Therefore all text in the website scales up by 20% */ 
   }
 
   header{
-    padding: 24px 48px;
+    padding: 24px 48px;  /* Increased padding for a larger screen This will continue in most containers. */ 
   }
   #hamburger {
-    display: none;
+    display: none;  /*No more hamburger */ 
   }
 
   #nav-close{
-    display: none;
+    display: none;  /* x needs to be removed from nav*/ 
   }
   nav{
-    display:inline-block;
-    position: absolute;
+    display:inline-block;  /* causes nav to sit in the header inline with the logo. */ 
+    position: absolute;  /* absolute positioning in a relative div constrains the child to the parent.*/ 
     right: 48px;
     top: 50%;
     width: fit-content;
     z-index: 9;
     height: 60px;
     -ms-transform: translateY(-50%); 
-     transform: translateY(-50%); 
+     transform: translateY(-50%);   /*Combined with top 50% vertically centers the nav within the header. */ 
   }
   #myLinks{
     display: inline-block;
@@ -521,18 +522,18 @@ form {
   #myLinks a{
     margin: 0 12px 0 0;
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 1.6rem;  /* decreased nav links font size as they are going to be constantly present.*/ 
   }
 
   #Mission{
     display: flex;
     padding: 0 48px;
-    align-items: center;
+    align-items: center;  /* Landing page is now side by side. Flex box allows this to happen */ 
   }
   #Mission img{
     min-width: 500px;
     max-width: 668px;
-    order: 2;
+    order: 2;  /* order 2 re-arranges the order of the children within the #Mission div. Now the image follows the text and button. */ 
   }
 
   #mission-content{
@@ -541,7 +542,7 @@ form {
   }
 
   #Mission .volunteer-button{
-    float: left;
+    float: left;  
   }
 
   #What{
@@ -550,19 +551,19 @@ form {
 
   #end{
     padding: 12px 48px;
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* Using flex box the 2x2 tile formatting can be acheived.*/ 
+    flex-wrap: wrap;  /* prevents the 4 boxes sitting on a single line. */ 
     justify-content: center;
     align-items: center;
   }
 
    #end img{
-    max-width: 50%;
-    flex: 1 1 50%;
+    max-width: 50%;  /* ensures there is space for 2 boxes in each line */ 
+    flex: 1 1 50%;  /*flex grow and flex shrink are both set to 1 allowing the boxes to adjust in size so it can accomodate many screen sizes. */ 
   }
 
   #E1T1{
-    box-sizing: border-box;
+    box-sizing: border-box;  /* includes padding in the width. if I specify 50% width then the width of the element will be 50% with the padding included rather than 50% + left and right padding. */ 
     padding-right: 24px;
     flex: 1 1 50%;
   }
@@ -575,30 +576,30 @@ form {
   }
 }
 
-@media screen and (min-width: 1100px){
+@media screen and (min-width: 1100px){  /* breakpoint for computer screens*/ 
   #Mission, #What, #end, header{
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 10%;  /* percentage based padding as larger screens can accomodate proportionally larger padding.  */ 
   }
 
   nav{
     right: 10%;
   }
   #Mission img{
-    max-width: 70%;
+    max-width: 70%;  /* Keeps the Mission image scaling up */ 
   }
   #horizontal-scrolling-container{
-    justify-content: space-between;
+    justify-content: space-between;  Spaces the cards so there is no more horizontal scrolling yet the cards remain evenly spaced and neat.
   }
 
   .cards{
-    max-width: 30%;
+    max-width: 30%;  /* Cards can now grow as screen size increases. */ 
     display: inline-block;
     flex: 1 0 auto; 
     padding: 0;
   }
   #what2, #what3{
-    padding: 0;
+    padding: 0;  /* no more padding needed as flex justify content handles spacing. */  
   }
   .cards img{
     width: 100%;
@@ -606,12 +607,12 @@ form {
   }
 
   #progress-bar-container{
-    margin: 30px auto;
+    margin: 30px auto;  /* auto horizontally centers the progress bar to the screen */ 
     width: 632px;
   }
 
   #questionnaire-container{
-    margin: 0 auto;
+    margin: 0 auto; /* auto horizontally centers the progress bar to the screen */ 
     width: 800px;
   }
 
