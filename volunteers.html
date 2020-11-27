@@ -49,7 +49,7 @@
             Each midnight basketball event could not happen without our wonderful volunteers. This questionnaire will help show you how we can make a change together.
           </p>
         </div>
-        <p class="questionnaire-prompt">Pick up to 3 areas where you feel you can make the biggest contribution
+        <p class="questionnaire-prompt">Pick any areas where you feel you would be interested in making a contribution. 
         </p>
         <form id="first-page-form">
           <label for="court" class="checkbox-container"> 
@@ -122,7 +122,7 @@
 
             <label for="grader" class ="checkbox-container"> 
               <input type="checkbox" name="grader" value="grader">
-                      Basketball Skill Evaluator
+                Basketball Skill Evaluator
             </label><br>
           </div>
 
@@ -173,7 +173,7 @@
             </label><br>
             
             <label for="supervisor" class ="checkbox-container"> 
-              <input type="supervisor" name="supervisor" value="supervisor">
+              <input type="checkbox" name="supervisor" value="Supervisor">
                 Mentoring Session Supervisor
             </label><br>
           </div> 
@@ -262,27 +262,11 @@
           <input class="third-page-input" type="text" name="fname"><br>
 
           <label class="third-page-input-labels" for="lname">Last Name</label><br>
-          <input class="third-page-input" type="text" name="lname">
+          <input class="third-page-input" type="text" name="lname"><br>
         
-          <p id="DOB-title">Date of Birth</p>
-
-          <div id="day">
-            <label class="third-page-input-labels" for="day">Day</label><br>
-            <input class="third-page-input" type="number" name="date" min="1" max="31">
-          </div>
-
-          <div id="month">
-            <label class="third-page-input-labels" for="month">Month</label><br>
-            <input class="third-page-input" type="text" name="month">
-          </div>
-
-          <div id="year">
-            <label class="third-page-input-labels" for="Year">Year</label><br>
-            <input class="third-page-input" type="number" name="year" min="1900" max="2020">
-          </div><br>
-
-          <label class="third-page-input-labels" for="email">Email Address</label><br>
-          <input class="third-page-input" type="email" name="email"><br>
+          <label class="third-page-input-labels" for="DOB">Date of Birth</label><br>
+          <input type="date" class="third-page-input" id="DOB" name="DOB"
+            min="1900-01-01" max="2020-11-27"><br>
 
           <div id="location-container">
             <label class="third-page-input-labels" for="location">Closest Midnight Basketball</label><br>
@@ -296,6 +280,10 @@
               <option class="location-options" value="taree">Taree</option>
             </select>
           </div>
+          
+          <label class="third-page-input-labels" for="email">Email Address</label><br>
+          <input class="third-page-input" id="email" type="email" name="email"><br>
+
           <input class="previous-button"type="button" value="Previous" onclick="backPage2()">
           <input class="next-button"type="button" value="Submit" onclick="thankYou()">
         </form>

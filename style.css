@@ -63,6 +63,10 @@ header{
   text-decoration: none;
 }
 
+#hamburger:hover{
+  color:#df6416;
+}
+
 
 nav {
   background: rgb(0, 0, 0, 0.8); 
@@ -102,6 +106,10 @@ nav {
   font-style: normal;
   font-size: 2.4rem;
 }
+
+#myLinks a:hover{
+  color:#df6416;
+}
 #Mission{
   overflow: hidden;  
 }
@@ -128,13 +136,17 @@ nav {
   font-size: 1.8rem;
 }
 
+.volunteer-button:hover{
+  background:#ff7016;
+}
+
 #What{
-  padding: 12px 24px; 
+  padding: 12px 0 12px 24px; 
 
 }
 
 #What h2{
-  padding: 12px 0px;
+  padding: 12px 24px 12px 0;
 }
 
 #What p{
@@ -150,7 +162,14 @@ nav {
   width:305px;
   display: inline-block;
   flex: 0 0 auto; 
-  padding-right: 24px; 
+}
+
+#what2{
+  padding:0 24px;
+}
+
+#what3{
+  padding-right: 24px;
 }
 .cards img{
   width: 305px;
@@ -215,6 +234,10 @@ footer a{
   font-size: 3rem;
   width: fit-content;
   margin: auto;
+}
+
+footer a:hover{
+  color:#df6416;
 }
 
 .dot {
@@ -354,6 +377,10 @@ form {
   width: 108px;
 }
 
+.next-button:hover{
+  background:#ff7016;
+}
+
 .previous-button{
   border-style: none;
   -webkit-appearance: none;
@@ -373,6 +400,10 @@ form {
   font-weight: 400;
   font-style: normal;
   line-height: 18px;
+}
+
+.previous-button:hover{
+  background:#ff7016;
 }
 
 #page2, #page3{
@@ -407,37 +438,32 @@ form {
   background: white;
   border-style: none;
   height: 26px; 
+  width: 50%;
 }
 
-#DOB-title{
+#email {
+  width: 100%;
+}
 
+#DOB{
+  background: white;
   font-family: acumin-pro, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+  width: 50%;
 
-}
-#day, #month, #year{
-  display: inline-block;
-}
-
-#day input{
-  width: 40px;
-}
-
-#month input{
-  width: 80px;
-}
-
-#year input{
-  width: 120px;
 }
 #location-container{
   display: block;
 }
 
 .location-options{
-  background: white;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  color: white;
 }
 
 .location-options:hover{
@@ -467,7 +493,7 @@ form {
   }
 
   header{
-    padding: 24px 48px 24px 48px;
+    padding: 24px 48px;
   }
   #hamburger {
     display: none;
@@ -504,6 +530,7 @@ form {
     align-items: center;
   }
   #Mission img{
+    min-width: 500px;
     max-width: 668px;
     order: 2;
   }
@@ -549,11 +576,17 @@ form {
 }
 
 @media screen and (min-width: 1100px){
-  #Mission, #What, #end{
+  #Mission, #What, #end, header{
     padding-left: 10%;
     padding-right: 10%;
   }
 
+  nav{
+    right: 10%;
+  }
+  #Mission img{
+    max-width: 70%;
+  }
   #horizontal-scrolling-container{
     justify-content: space-between;
   }
@@ -564,7 +597,10 @@ form {
     flex: 1 0 auto; 
     padding: 0;
   }
-.cards img{
+  #what2, #what3{
+    padding: 0;
+  }
+  .cards img{
     width: 100%;
     height: auto;
   }
