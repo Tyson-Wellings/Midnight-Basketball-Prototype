@@ -15,7 +15,7 @@ function closeNav() {
 function page2(){
   document.getElementById("page2").style.display = "block";
   document.getElementById("page1").style.display = "none";
-  document.getElementById("questionairre-preface").style.display = "none";
+  document.getElementById("questionnaire-preface").style.display = "none";
   document.getElementById("dot2").style.background ="#df6416"
   if (document.getElementById("court").checked == true){
     document.getElementById("court-jobs").style.display = "block";
@@ -50,7 +50,7 @@ function page2(){
 function page1(){
   document.getElementById("page2").style.display = "none";
   document.getElementById("page1").style.display = "block";
-  document.getElementById("questionairre-preface").style.display = "block";
+  document.getElementById("questionnaire-preface").style.display = "block";
   document.getElementById("dot2").style.background ="white"
   document.getElementById("bus-jobs").style.display = "none";
   document.getElementById("court-jobs").style.display = "none";
