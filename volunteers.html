@@ -1,1 +1,317 @@
-Under construction
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Midnight Basketball</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d032ddafa4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/xje8bns.css">
+  </head>
+  <body>
+    <header>
+      <img src="images/header_logo.jpg" alt="Midnight Basketball's Logo" id="header_logo">
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" id="hamburger" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a> 
+      <div id="nav">
+        <a href="javascript:void(0);" id="nav-close" onclick="closeNav()">
+         <i class="fas fa-times"></i>
+        </a> 
+      <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="index.html#Mission" onclick="closeNav()">Our Mission</a>
+          <a href="index.html#What" onclick="closeNav()">What we do</a>
+          <a href="volunteers.html" onclick="closeNav()">Ways you can help</a>
+        </div>  
+      </div>
+    </header>
+    <div id="progress-bar-container">
+      <div id="progress-bar">
+        <div id="progress-bar-shading">
+        </div>
+      </div>
+      <span class="dot" id="dot1"></span>
+      <span class="dot" id="dot2"></span>
+      <span class="dot" id="dot3"></span>
+    </div>  
+    
+    <div id="questionairre-container">
+      <div id="page1">
+        <div id="questionairre-preface">
+          <h2> 
+            Volunteers 
+          </h2>
+          <p>
+            Each midnight basketball event could not happen without our wonderful volunteers. This questionairre will help show you how we can make a change together.
+          </p>
+        </div>
+        <p class="questionairre-prompt">Pick up to 3 areas where you feel you can make the biggest contribution
+        </p>
+        <form id="first-page-form">
+          <label for="court" class="checkbox-container"> 
+            <input id="court" type="checkbox" name="court" value="court"> 
+            On the court
+          </label><br>
+          
+          <label for="bus" class="checkbox-container"> 
+            <input id="bus"type="checkbox" name="bus" value="bus">
+            On the bus
+          </label><br>
+
+          <label for="canteen" class="checkbox-container"> 
+           <input id="canteen" type="checkbox" name="canteen" value="canteen" >
+           In the Canteen
+          </label><br>
+
+          <label for="Peace" class="checkbox-container"> 
+            <input id="peace" type="checkbox" name="Peace" value="Peace">
+            Peace Keeping and conflict resolution
+          </label><br>
+
+          <label for="Mentoring" class="checkbox-container"> 
+            <input id="mentoring" type="checkbox" name="Mentoring" value="Mentoring">
+            Mentoring Sessions
+          </label><br>
+
+          <label for="Prep" class="checkbox-container"> 
+            <input id="prep" type="checkbox" name="Prep" value="Prep">
+            During the Prep and Facilitation
+          </label><br>
+
+          <label for="Committee" class="checkbox-container"> 
+            <input id="committee" type="checkbox" name="Committee" value="Committee">
+            On the executive committee
+          </label><br>
+          <input class="next-button"type="button" value="Next" onclick="page2()">
+        </form>
+      </div>
+
+      <div id="page2">
+        <div id="questionairre-preface">
+          <h2> 
+            Volunteers 
+          </h2>
+        </div>
+        <p class="questionairre-prompt">Pick all duties that you would feel qualified to fulfill.
+        </p>
+        <form id="second-page-form">
+          <div id="court-jobs">  
+            <label for="coach" class ="checkbox-container"> 
+              <input type="checkbox" name="coach" value="coach"> 
+                Coach/Coach Assistant
+            </label><br>
+            
+            <label for="ref" class ="checkbox-container"> 
+              <input type="checkbox" name="ref" value="ref">
+                Referee
+            </label><br>
+
+            <label for="scorer" class ="checkbox-container"> 
+              <input type="checkbox" name="scorer" value="scorer" >
+                Scorer
+            </label><br>
+
+            <label for="scoreboard" class ="checkbox-container"> 
+              <input type="checkbox" name="scoreboard" value="scoreboard" >
+                Scoreboard Operator
+            </label><br>
+
+            <label for="grader" class ="checkbox-container"> 
+              <input type="checkbox" name="grader" value="grader">
+                      Basketball Skill Evaluator
+            </label><br>
+          </div>
+
+          <div id="bus-jobs">
+            <label for="driver" class ="checkbox-container"> 
+              <input type="checkbox" name="driver" value="driver" >
+                Bus Driver
+            </label><br>
+
+            <label for="Logistics" class ="checkbox-container"> 
+              <input type="checkbox" name="Logistics" value="Logistics" >
+                Bus Logistics
+            </label><br>
+            <label for="supervisor" class ="checkbox-container"> 
+              <input type="checkbox" name="supervisor" value="supervisor"> 
+                Bus Supervisor
+            </label><br>
+          </div>
+
+          <div id="canteen-jobs">  
+            <label for="Caterer" class ="checkbox-container"> 
+              <input type="checkbox" name="caterer" value="caterer"> 
+                Caterer
+            </label><br>
+            
+            <label for="catering-help" class ="checkbox-container"> 
+              <input type="checkbox" name="catering-help" value="catering-help">
+                Catering Helper
+            </label><br>
+          </div> 
+
+          <div id="peace-jobs">  
+            <label for="security" class ="checkbox-container"> 
+              <input type="checkbox" name="security" value="security"> 
+                Security
+            </label><br>
+            
+            <label for="youth-work" class ="checkbox-container"> 
+              <input type="checkbox" name="youth-work" value="youth-work">
+                Youth Work
+            </label><br>
+          </div> 
+
+          <div id="mentoring-jobs">  
+            <label for="Facilitator" class ="checkbox-container"> 
+              <input type="checkbox" name="Facilitator" value="Facilitator"> 
+                Mentoring Session Facilitator
+            </label><br>
+            
+            <label for="supervisor" class ="checkbox-container"> 
+              <input type="supervisor" name="supervisor" value="supervisor">
+                Mentoring Session Supervisor
+            </label><br>
+          </div> 
+
+          <div id="prep-jobs">  
+            <label for="ga" class ="checkbox-container"> 
+              <input type="checkbox" name="ga" value="ga"> 
+                General Assistant
+            </label><br>
+            
+            <label for="laundry" class ="checkbox-container"> 
+              <input type="checkbox" name="laundry" value="laundry">
+                Laundry Volunteer
+            </label><br>
+
+            <label for="TNM" class ="checkbox-container"> 
+              <input type="checkbox" name="TNM" value="TNM" >
+                Tournament Night Manager
+            </label><br>
+
+            <label for="rh" class ="checkbox-container"> 
+              <input type="checkbox" name="rh" value="rh" >
+                Registration Helper
+            </label><br>
+          </div>
+
+          <div id="committee-jobs">  
+            <label for="chair" class ="checkbox-container"> 
+              <input type="checkbox" name="chair" value="chair"> 
+              Chair
+            </label><br>
+            
+            <label for="FM" class ="checkbox-container"> 
+              <input type="checkbox" name="FM" value="FM">
+              Finance Manager
+            </label><br>
+
+            <label for="FSM" class ="checkbox-container"> 
+              <input type="checkbox" name="FSM" value="FSM" >
+                Fundraising and Support Manager
+            </label><br>
+
+            <label for="LM" class ="checkbox-container"> 
+              <input type="checkbox" name="LM" value="LM" >
+              Logistics Manager
+            </label><br>
+
+            <label for="MM" class ="checkbox-container"> 
+              <input type="checkbox" name="MM" value="MM">
+              Media Manager
+            </label><br>
+
+            <label for="MSM" class ="checkbox-container"> 
+              <input type="checkbox" name="MSM" value="MSM" >
+                Mentoring Session Manager
+            </label><br>
+
+            <label for="VM" class ="checkbox-container"> 
+              <input type="checkbox" name="VM" value="VM" >
+              Volunteer Manager
+            </label><br>
+
+            <label for="YM" class ="checkbox-container"> 
+              <input type="checkbox" name="YM" value="YM">
+              Youth Manager
+            </label><br>
+          </div>
+          <input class="previous-button"type="button" value="Previous" onclick="page1()">
+          <input class="next-button"type="button" value="Next" onclick="page3()">
+        </form>
+      </div>
+
+      <div id="page3">
+        <div id="questionairre-preface">
+          <h2> 
+            Volunteers 
+          </h2>
+          <p id="page3Preface">
+            You're almost done! We just need your contact details so we can update you on appropriate volunteering oppurtunities.
+          </p>
+        </div>
+
+
+        <form id="third-page-form">
+          <label class="third-page-input-labels" for="fname">First Name</label><br>
+          <input class="third-page-input" type="text" name="fname"><br>
+
+          <label class="third-page-input-labels" for="lname">Last Name</label><br>
+          <input class="third-page-input" type="text" name="lname">
+        
+          <p id="DOB-title">Date of Birth</p>
+
+          <div id="day">
+            <label class="third-page-input-labels" for="day">Day</label><br>
+            <input class="third-page-input" type="number" name="date" min="1" max="31">
+          </div>
+
+          <div id="month">
+            <label class="third-page-input-labels" for="month">Month</label><br>
+            <input class="third-page-input" type="text" name="month">
+          </div>
+
+          <div id="year">
+            <label class="third-page-input-labels" for="Year">Year</label><br>
+            <input class="third-page-input" type="number" name="year" min="1900" max="2020">
+          </div><br>
+
+          <label class="third-page-input-labels" for="email">Email Address</label><br>
+          <input class="third-page-input" type="email" name="email"><br>
+
+          <div id="location-container">
+            <label class="third-page-input-labels" for="location">Closest Midnight Basketball</label><br>
+            <select class="third-page-input" name="location">
+              <option class="location-options" value="ballarat">Ballarat</option>
+              <option class="location-options" value="bankstown">Bankstown</option>
+              <option class="location-options"value="geelong">Geelong</option>
+              <option class="location-options" value="griffith">Griffith</option>
+              <option class="location-options" value="liverpool">Liverpool</option>
+              <option class="location-options" value="mildura">Mildura</option>
+              <option class="location-options" value="taree">Taree</option>
+            </select>
+          </div>
+          <input class="previous-button"type="button" value="Previous" onclick="backPage2()">
+          <input class="next-button"type="button" value="Next" onclick="thankYou()">
+        </form>
+      </div>
+      <div id="thank-you">
+        <h2>Welcome to the Midnight Basketball Family</h2>
+        <img src="images/ThankYou.png" width="100%">
+        <p>
+          Thank you for expressing interest in volunteering. We value each and every contribution. We are currently busy planning future midnight basketball events. Rest assured you will be among our other wonderful volunteers who will be notified when events open up in your area. On behalf of all members of Midnight Basketball we want to welcome you to the team! 
+        </p>
+      </div>
+    </div>
+    <footer>
+      <a href="https://www.facebook.com/MidnightBasketballAustralia"> 
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com/Midnight_Bball">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </footer>
+  </body>

@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0; 
 }
-
+//General formatting
 h2{
   font-family: acumin-pro, sans-serif;
   font-weight: 700;
@@ -23,11 +23,10 @@ p{
 header{
   padding: 0;
   height: 60px;
-  position: relative;
-  position: fixed;
+  position: sticky;
   top: 0%;
   width: 100%;
-  z-index: 2;
+  z-index: 8; //prevents the sticky header being overlapped by the content of the page
   
 }
 
@@ -37,18 +36,18 @@ header{
 
 }
 
-/* Style the hamburger menu */
-#hamburger {
+// Style the hamburger menu //
+#hamburger { 
   font-size: 30px;
   display: inline-block;
   background: black;
   position: absolute;
   right: 24px;
   top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -ms-transform: translateY(-50%); //different browser support for the positioning of the hamburger
+  transform: translateY(-50%); 
   color: white;
-  text-decoration: none;
+  text-decoration: none; //gets rid of the default a tag formatting
 }
 
 
@@ -56,9 +55,9 @@ header{
   background: rgb(0, 0, 0, 0.8); 
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: hidden; 
   position: fixed;
-  z-index: 3;
+  z-index: 9; //has navigations overlap all content.
   display: none;
   top: 0%;
 }
@@ -97,7 +96,7 @@ header{
   position: relative;
 }
 
-.volunteer-button{
+.volunteer-button{ //use of class allows all the buttons to remain consistent
   margin-top: 8px;
   color: white;
   background:#df6416;
@@ -122,8 +121,8 @@ header{
   padding: 12px 0px;
 }
 #horizontal-scrolling-container{
-  display: flex;
-  flex-wrap: nowrap;
+  display: flex; 
+  flex-wrap: nowrap; //prevents flex items looping to the bottom. facilitating horizontal scrolling.
   overflow-x: auto;
   
 }
@@ -131,7 +130,7 @@ header{
 .cards{
   width:305px;
   display: inline-block;
-  flex: 0 0 auto;
+  flex: 0 0 auto; //automatically dictates how the flex cards grow
   padding-right: 24px; 
 }
 .cards img{
@@ -195,4 +194,253 @@ footer a{
   text-decoration: none;
   display: block;
   font-size: 30px;
+  width: fit-content;
+  margin: auto;
+}
+
+.dot {
+  height: 36px;
+  width: 36px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 5;
+  background: white;
+}
+
+#dot1{
+  position: absolute;
+  top: -12px; 
+  left: 24px;
+  background:#df6416;
+}
+
+#dot2{
+  position: absolute;
+  top: -12px; 
+  left: calc(50% - 18px);
+}
+
+#dot3{
+  position: absolute;
+  top: -12px; 
+  right: 24px;
+}
+
+#progress-bar-container{
+  z-index:2;
+  margin: 30px 0;
+  padding: 0 28px;
+  width: vw;
+  height: 12px;
+  position: relative;
+
+}
+
+#progress-bar{
+  background: white;
+  height: 12px;
+  width: 100%;
+  z-index: 3;
+  margin: 0 12px 0 0;
+  display: inline-block;
+}
+
+#progress-bar-shading{
+  background:#df6416;
+  width: 50%;
+  z-index: 4;
+  height: 12px; 
+  display: inline-block;
+}
+#questionairre-preface,  p{
+  font-size: 18px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  margin: 12px 0; 
+}
+#questionairre-container{
+  overflow: hidden;
+}
+#page1 {
+  padding: 12px 24px; 
+  display: block;
+}
+
+.questionairre-prompt{
+  font-size: 24px;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+form {
+  margin: 6px 0; 
+}
+
+/* Customize the label (the container) */
+.checkbox-container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: white;
+}
+
+.checkbox-container input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.checkbox-container input:hover{
+  background:grey;
+}
+
+.checkbox-container input:checked  {
+  border-radius: 50%;
+  background: #df6416;
+}
+
+.next-button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-top: 8px;
+  color: white;
+  background:#df6416;
+  padding:10px 18px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 17.5px;
+  float: right;
+  display: block;
+  text-align: center;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+  width: 108px;
+}
+
+.previous-button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-top: 8px;
+  color: white;
+  background:#df6416;
+  padding:10px 18px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 17.5px;
+  float: left;
+  display: block;
+  text-align: center;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 18px;
+}
+
+#page2, #page3{
+  padding: 12px 24px; 
+  display: none;
+}
+
+#court-jobs, #bus-jobs, #canteen-jobs, #peace-jobs, #mentoring-jobs, #prep-jobs, #committee-jobs{
+  display: none;
+}
+
+#third-page-form{
+  overflow: hidden;
+}
+#page3Preface{
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.third-page-input-labels{
+  color: white;
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.third-page-input{
+  margin: 6px 0 12px 0;
+  background: white;
+  border-style: none;
+  height: 26px; 
+}
+
+#DOB-title{
+
+  font-family: acumin-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 22px;
+
+}
+#day, #month, #year{
+  display: inline-block;
+}
+
+#day input{
+  width: 40px;
+}
+
+#month input{
+  width: 80px;
+}
+
+#year input{
+  width: 120px;
+}
+#location-container{
+  display: block;
+}
+
+.location-options{
+  background: white;
+}
+
+.location-options:hover{
+  background: #df6416;
+}
+
+#thank-you{
+  display: none;
+  padding: 24px 24px; 
+}
+
+#thank-you h2{
+  margin-bottom: 24px;
+}
+
+#thank-you p{
+  font-family: acumin-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
 }
