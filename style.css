@@ -1,3 +1,7 @@
+html {
+font-size: 62.5%;
+}
+
 *{
   background: black;
   padding: 0;
@@ -8,7 +12,7 @@ h2{
   font-family: acumin-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 36px;
+  font-size: 3.6rem;
   color: white;
 }
 
@@ -16,23 +20,24 @@ p{
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: white; 
 }
 
 header{
-  padding: 0;
-  height: 60px;
+  padding: 6px 0 6px 12px;
+  height: fit-content;
   position: sticky;
   top: 0%;
   width: 100%;
   z-index: 8; 
+  box-sizing: border-box;
   
 }
 
 #header_logo{
   width: 204px;
-  margin: 0 24px;
+  margin: 0;
 
 }
 
@@ -50,7 +55,7 @@ header{
 }
 
 
-#nav {
+nav {
   background: rgb(0, 0, 0, 0.8); 
   width: 100%;
   height: 100%;
@@ -59,6 +64,7 @@ header{
   z-index: 9; 
   display: none;
   top: 0%;
+  margin-left:-12px;
 }
 
 #nav-close {
@@ -85,6 +91,7 @@ header{
   font-family: acumin-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
+  font-size: 2.4rem;
 }
 #Mission{
   overflow: hidden;  
@@ -108,7 +115,8 @@ header{
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
-  line-height: 18px;
+  line-height: 1.8rem;
+  font-size: 1.8rem;
 }
 
 #What{
@@ -119,11 +127,14 @@ header{
 #What h2{
   padding: 12px 0px;
 }
+
+#What p{
+  padding: 0;
+}
 #horizontal-scrolling-container{
   display: flex; 
   flex-wrap: nowrap; 
   overflow-x: auto;
-  
 }
 
 .cards{
@@ -141,13 +152,13 @@ header{
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 1.8rem;
   padding: 0 4px;
 }
 
 blockquote{
   margin-top: 12px;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -156,7 +167,7 @@ blockquote{
 
 figcaption {
   margin-top: 12px;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-family: acumin-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -176,7 +187,7 @@ figcaption {
 
 #call-to-action p{
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 footer{
@@ -192,7 +203,7 @@ footer a{
   padding: 6px 0;
   text-decoration: none;
   display: block;
-  font-size: 30px;
+  font-size: 3rem;
   width: fit-content;
   margin: auto;
 }
@@ -253,7 +264,7 @@ footer a{
   display: inline-block;
 }
 #questionairre-preface,  p{
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: acumin-pro, sans-serif;
   font-weight: 300;
   font-style: italic;
@@ -268,7 +279,7 @@ footer a{
 }
 
 .questionairre-prompt{
-  font-size: 24px;
+  font-size: 2.4rem;
   font-family: acumin-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -286,7 +297,7 @@ form {
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: white;
 }
 
@@ -320,8 +331,9 @@ form {
   color: white;
   background:#df6416;
   padding:10px 18px;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-decoration: none;
+  border-style: none;
   border-radius: 17.5px;
   float: right;
   display: block;
@@ -334,6 +346,7 @@ form {
 }
 
 .previous-button{
+  border-style: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -341,7 +354,7 @@ form {
   color: white;
   background:#df6416;
   padding:10px 18px;
-  font-size: 18px;
+  font-size: 1.8rem;
   text-decoration: none;
   border-radius: 17.5px;
   float: left;
@@ -369,7 +382,7 @@ form {
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .third-page-input-labels{
@@ -377,7 +390,7 @@ form {
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .third-page-input{
@@ -392,7 +405,7 @@ form {
   font-family: acumin-pro, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 22px;
+  font-size: 2.2rem;
 
 }
 #day, #month, #year{
@@ -435,5 +448,130 @@ form {
   font-family: acumin-pro, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 750px) {
+
+  html {
+    font-size: 75%;
+  }
+
+  header{
+    padding: 24px 48px 24px 48px;
+  }
+  #hamburger {
+    display: none;
+  }
+
+  #nav-close{
+    display: none;
+  }
+  nav{
+    display:inline-block;
+    position: absolute;
+    right: 48px;
+    top: 50%;
+    width: fit-content;
+    z-index: 9;
+    height: 60px;
+    -ms-transform: translateY(-50%); 
+     transform: translateY(-50%); 
+  }
+  #myLinks{
+    display: inline-block;
+    margin: 0;
+    height: 60px; 
+  }
+  #myLinks a{
+    margin: 0 12px 0 0;
+    display: inline-block;
+    font-size: 1.6rem;
+  }
+
+  #Mission{
+    display: flex;
+    padding: 0 48px;
+    align-items: center;
+  }
+  #Mission img{
+    max-width: 668px;
+    order: 2;
+  }
+
+  #mission-content{
+    order: 1;
+    padding: 48px 12px 48px 0;
+  }
+
+  #Mission .volunteer-button{
+    float: left;
+  }
+
+  #What{
+    padding: 12px 48px;
+  }
+
+  #end{
+    padding: 12px 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+   #end img{
+    max-width: 50%;
+    flex: 1 1 50%;
+  }
+
+  #E1T1{
+    box-sizing: border-box;
+    padding-right: 24px;
+    flex: 1 1 50%;
+  }
+
+  #call-to-action{
+    order: 4;
+    box-sizing: border-box;
+    padding-left: 24px; 
+    flex: 1 1 50%;
+  }
+}
+
+@media screen and (min-width: 1100px){
+  #Mission, #What, #end{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #horizontal-scrolling-container{
+    justify-content: space-between;
+  }
+
+  .cards{
+    max-width: 30%;
+    display: inline-block;
+    flex: 1 0 auto; 
+    padding: 0;
+  }
+.cards img{
+    width: 100%;
+    height: auto;
+  }
+
+  #progress-bar-container{
+    margin: 30px auto;
+    width: 632px;
+  }
+
+  #questionairre-container{
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  #thank-you h2{
+    font-size: 4rem;
+  }
+
 }
